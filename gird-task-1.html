@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-01</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .section{
+            border: 2px solid black;
+            border-radius: 8px;
+            padding: 10px;
+            width: 90%;
+            min-height: 478px;
+            margin: 0 auto;
+            margin-top: 5%;
+            display: grid;
+            grid-template-columns: 40% 59% repeat(2,1fr);
+            column-gap: 10px;
+
+        }
+        .right{
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            background-color: #F4F4DB;
+        }
+        .left{
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #D2D2D2;
+        }
+        @media screen and (max-width:650px) {
+            .section{
+                grid-template-columns: repeat(1,1fr);
+                row-gap: 10px;
+                
+            }
+            
+        }
+    </style>
+
+</head>
+<body>
+    <div class="section">
+        <div class="left">
+            <p>Left</p>
+        </div>   
+        <div class="right">
+            <p>Right</p>
+        </div>
+       
+    </div>
+</body>
+</html>
