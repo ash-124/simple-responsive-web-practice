@@ -7,10 +7,18 @@
     <style>
         .container{
             border: 2px solid black;
-            display: flex;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            row-gap: 20px;
+            column-gap: 10px;
         }
         .food{
             border: 2px solid tomato;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .food img{
+            width: 100%;
         }
         
     </style>
